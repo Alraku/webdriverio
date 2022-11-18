@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1668814944455' stop='1668814949834'>
+    <name>Full process of smartphone purchase in online store</name>
+    <title>Full process of smartphone purchase in online store</title>
+    <test-cases>
+        <test-case start='1668814944455' status='passed' stop='1668814947621'>
+            <name>should create new user account</name>
+            <title>should create new user account</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='msedge-107.0.1418.42'/>
+                <parameter kind='argument' name='browser' value='msedge-107.0.1418.42'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1668814947621' status='passed' stop='1668814949833'>
+            <name>should login the user account</name>
+            <title>should login the user account</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='msedge-107.0.1418.42'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

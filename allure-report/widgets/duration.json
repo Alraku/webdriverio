@@ -1,0 +1,1 @@
+[{"uid":"f5f06460e1ede549","name":"should create new user account","time":{"start":1668814944455,"stop":1668814947621,"duration":3166},"status":"passed","severity":"normal"},{"uid":"3cfc8ee48856b54b","name":"should login the user account","time":{"start":1668814947621,"stop":1668814949833,"duration":2212},"status":"passed","severity":"normal"}]
