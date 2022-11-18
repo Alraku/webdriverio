@@ -10,7 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@wdio/cli": "^7.26.0"
+    "@wdio/cli": "^7.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^9.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0"
   },
   "devDependencies": {
     "@badisi/wdio-harness": "^1.0.5",
