@@ -1,5 +1,6 @@
 const Page = require('./page');
 const { presenceOf } = require('wdio-wait-for');
+const { uniqueRandom } = require('../../helpers')
 const { HomePageLocators,
         LoginDialogLocators,
         SignUpDialogLocators } = require('./locators')
@@ -22,6 +23,20 @@ class LoginPage extends Page {
 
         browser.waitUntil(presenceOf(HomePageLocators.navLinkUser), 
             {timeout: 5000, timeoutMsg: 'Failed after waiting for the element to be present'});
+    }
+
+    async filterPhones() {
+        await HomePageLocators.filterPhones.click();
+    }
+
+    async selectItem(itemId) {
+        await HomePageLocators.itemLabel(itemId + 1).click()
+        await browser.pause(3000) //wait for page to load
+    }
+
+    async goToCart() {
+        await HomePageLocators.navLinkCart.click()
+        await browser.pause(3000) //wait for page to load
     }
 
     get getCurrentUser() {

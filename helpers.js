@@ -1,7 +1,7 @@
 const crypto = require('crypto')
 
-const firstNameList = ['Mike', 'David', 'Eva', 'Samantha'];
-const lastNameList = ['Harrow', 'Smith', 'Black', 'White'];
+const firstNameList = ['John', 'Frank', 'Mia', 'Ola'];
+const lastNameList = ['Green', 'Dunder', 'Cox', 'Raviq'];
 
 class User {
 
@@ -32,3 +32,5 @@ export function createUserCredentials() {
     let email = `${firstName}.${lastName}${number}@mail.com`
     return new User(firstName, lastName, email, generatePassword())
 }
+
+export { uniqueRandom }
