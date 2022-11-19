@@ -1,7 +1,45 @@
+class CartPageLocators {
+
+    get cartItemName() {
+        return $('//*[@id="tbodyid"]/tr/td[2]')
+    }
+
+    get cartTotal() {
+        return $('#totalp')
+    }
+}
+
+class ProductPageLocators {
+
+    get btnAddtoCart() {
+        return $('a=Add to cart')
+    }
+
+    get itemPrice() {
+        return $('[class="price-container"]')
+    }
+
+    get itemName() {
+        return $('[class="name"]')
+    }
+}
+
 class HomePageLocators {
 
     get navLinkUser() {
         return $('#nameofuser')
+    }
+
+    get navLinkCart() {
+        return $('#cartur')
+    }
+
+    get filterPhones() {
+        return $(`[onclick="byCat('phone')"]`)
+    }
+
+    itemLabel(number) {
+        return $(`[href="prod.html?idp_=${number}"]`)
     }
 }
 
@@ -46,5 +84,7 @@ class SignUpDialogLocators {
 module.exports = {
     SignUpDialogLocators : new SignUpDialogLocators,
     LoginDialogLocators : new LoginDialogLocators,
-    HomePageLocators : new HomePageLocators
+    HomePageLocators : new HomePageLocators,
+    ProductPageLocators : new ProductPageLocators,
+    CartPageLocators : new CartPageLocators
   }
