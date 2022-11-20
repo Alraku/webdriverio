@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Nov 20 12:36:46 CET 2022","Sun Nov 20 12:36:57 CET 2022","11084","","Full process of smartphone purchase in online store","","Full process of smartphone purchase in online store","should add item to a cart","should add item to a cart",""
+"passed","Sun Nov 20 12:36:44 CET 2022","Sun Nov 20 12:36:46 CET 2022","2471","","Full process of smartphone purchase in online store","","Full process of smartphone purchase in online store","should login the user account","should login the user account",""
+"passed","Sun Nov 20 12:36:41 CET 2022","Sun Nov 20 12:36:44 CET 2022","2615","","Full process of smartphone purchase in online store","","Full process of smartphone purchase in online store","should create new user account","should create new user account",""
+"passed","Sun Nov 20 12:36:57 CET 2022","Sun Nov 20 12:37:02 CET 2022","4529","","Full process of smartphone purchase in online store","","Full process of smartphone purchase in online store","should place an order and purchase","should place an order and purchase",""

@@ -19,6 +19,7 @@ class LoginPage extends Page {
         await LoginDialogLocators.logInInputUsername.setValue(username);
         await LoginDialogLocators.logInInputPassword.setValue(password);
         await LoginDialogLocators.logInBtnSubmit.click();
+        await browser.pause(1000);
 
         browser.waitUntil(presenceOf(HomePageLocators.navLinkUser), 
             {timeout: 5000, timeoutMsg: 'Failed after waiting for the element to be present'});
