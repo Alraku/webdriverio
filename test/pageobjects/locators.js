@@ -1,3 +1,42 @@
+class OrderDialogLocators {
+
+    get orderDialog() {
+        return $('[class="modal-dialog"]')
+    }
+
+    get inputName() { 
+        return $('#name')
+    }
+
+    get inputCountry() { 
+        return $('#country')
+    }
+
+    get inputCity() { 
+        return $('#city')
+    }
+
+    get inputCreditCard() { 
+        return $('#card')
+    }
+
+    get inputMonth() { 
+        return $('#month')
+    }
+
+    get inputYear() { 
+        return $('#year')
+    }
+
+    get btnPurchase() { 
+        return $('[onclick="purchaseOrder()"]')
+    }
+
+    get responseDialog() {
+        return $('[class="lead text-muted "]')
+    }
+}
+
 class CartPageLocators {
 
     get cartItemName() {
@@ -6,6 +45,10 @@ class CartPageLocators {
 
     get cartTotal() {
         return $('#totalp')
+    }
+
+    get btnPlaceOrder() { 
+        return $('button=Place Order')
     }
 }
 
@@ -86,5 +129,6 @@ module.exports = {
     LoginDialogLocators : new LoginDialogLocators,
     HomePageLocators : new HomePageLocators,
     ProductPageLocators : new ProductPageLocators,
-    CartPageLocators : new CartPageLocators
+    CartPageLocators : new CartPageLocators,
+    OrderDialogLocators : new OrderDialogLocators
   }

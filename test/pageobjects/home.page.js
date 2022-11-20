@@ -1,6 +1,5 @@
 const Page = require('./page');
 const { presenceOf } = require('wdio-wait-for');
-const { uniqueRandom } = require('../../helpers')
 const { HomePageLocators,
         LoginDialogLocators,
         SignUpDialogLocators } = require('./locators')

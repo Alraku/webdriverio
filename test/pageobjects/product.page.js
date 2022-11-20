@@ -1,5 +1,4 @@
 const Page = require('./page');
-const { presenceOf } = require('wdio-wait-for');
 const { ProductPageLocators } = require('./locators')
 
 

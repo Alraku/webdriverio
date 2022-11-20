@@ -15,7 +15,8 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^9.1.0",
     "babel-preset-es2015": "^6.24.1",
-    "babel-register": "^6.26.0"
+    "babel-register": "^6.26.0",
+    "creditcard-generator": "^0.0.7"
   },
   "devDependencies": {
     "@badisi/wdio-harness": "^1.0.5",

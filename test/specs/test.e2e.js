@@ -1,7 +1,7 @@
 const HomePage = require('../pageobjects/home.page');
 const CartPage = require('../pageobjects/cart.page');
 const ProductPage = require('../pageobjects/product.page');
-import { createUserCredentials, uniqueRandom } from '../../helpers';
+import { createUser, uniqueRandom } from '../../helpers';
 
 
 describe('Full process of smartphone purchase in online store', () => {
@@ -9,7 +9,8 @@ describe('Full process of smartphone purchase in online store', () => {
     let phoneInfo = { name: null, price: null, itemId: uniqueRandom(7) }
 
     before(() => {
-        user = createUserCredentials()
+        user = createUser()
+        console.log(user)
     });
 
     it('should create new user account', async () => {
@@ -44,6 +45,20 @@ describe('Full process of smartphone purchase in online store', () => {
         await expect(cartItem).toHaveTextContaining(phoneInfo.name);
         await expect(cartTotal).toHaveTextContaining(phoneInfo.price.replace(/[^0-9]/g, ''));
     });
-    //it('should place an order and purchase', async () => {});
+
+    it('should place an order and purchase', async () => {
+        await HomePage.goToCart()
+        await CartPage.placeOrder()
+        await CartPage.fillInData(user)
+
+        await CartPage.purchase()
+        const response = await CartPage.getResponse()
+        await expect(response).toEqual(true)
+        // I could not fetch text items in p tag in order to verify order properties.
+        // additional assertions should be done:
+        
+        //await expect(response.amount).toEqual(phoneInfo.price)
+        //await expect(response.card).toEqual(user.creditCard.number)
+        //await expect(response.name).toEqual(`${user.firstName} ${user.lastName}`)
+    });
 });
-//*[@id="tbodyid"]/tr/td[2]
